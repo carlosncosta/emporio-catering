@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Emporio Italia Catering — We bring the Dolce Vita to your event</title>
-<meta name="description" content="Premium Italian catering in Portugal. Live cooking, private chef dinners, wine tastings, corporate events. Authentic Italian gastronomy for 8 to 250 guests.">
+<title>Emporio Italia Catering — A Dolce Vita no seu evento</title>
+<meta name="description" content="Catering italiano premium em Portugal. Live cooking, jantares privados com chef, provas de vinho, eventos corporativos. Gastronomia italiana autêntica para 8 a 250 convidados.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Lato:wght@100;300;400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
 <style>
@@ -105,7 +105,7 @@ a{text-decoration:none;color:inherit}
 }
 .hero-content{position:relative;z-index:2;text-align:center;padding:0 24px}
 .hero-logo{
-  height:60px;width:auto;margin:0 auto 28px;
+  height:110px;width:auto;margin:0 auto 28px;
   opacity:0;animation:fadeUp 1s ease 0.2s forwards;
   filter:brightness(1.1);
 }
@@ -417,7 +417,7 @@ a{text-decoration:none;color:inherit}
 .footer .flag .w{background:#F4F5F0}
 .footer .flag .r{background:#CD212A}
 
-/* ═══════════════ MOBILE ═══════════════ */
+/* ═══════════════ TABLET (≤900px) ═══════════════ */
 @media(max-width:900px){
   .nav-links{display:none}
   .nav-cta{display:none}
@@ -438,10 +438,95 @@ a{text-decoration:none;color:inherit}
   .about-stat-row{justify-content:center}
   .modular{background-attachment:scroll}
   .hero-title{letter-spacing:2px}
+  .hero-logo{height:80px}
+  .service-card[style]{max-width:100%!important}
 }
+
+/* ═══════════════ MOBILE (≤480px) ═══════════════ */
 @media(max-width:480px){
-  .gallery-scroll img{width:150px;height:150px}
+  /* Container */
+  .container{padding:0 16px}
+
+  /* Hero */
+  .hero{min-height:100vh;min-height:100svh}
+  .hero-logo{height:70px;margin-bottom:20px}
+  .hero-title{font-size:48px;letter-spacing:1px}
+  .hero-tagline{font-size:18px;margin-bottom:32px}
+  .hero-cta{padding:14px 36px;font-size:10px;letter-spacing:3px}
+  .hero-eyebrow{font-size:11px;letter-spacing:5px}
+
+  /* Section spacing */
+  .about,.services,.chefs,.menu,.venues{padding:80px 0}
+  .modular{padding:80px 0}
+  .drinks{padding:60px 0}
+
+  /* Section typography */
+  .section-label{font-size:10px;letter-spacing:4px;margin-bottom:12px}
+  .section-title{font-size:28px;margin-bottom:16px}
+  .section-subtitle{font-size:17px;margin-bottom:32px}
+
+  /* About */
+  .about-text h2{font-size:26px}
+  .about-text .highlight{font-size:17px}
+  .about-text p{font-size:14px}
+  .about-stat-row{gap:24px}
+  .about-stat .num{font-size:28px}
+  .about-stat .label{font-size:10px}
+  .about-badge{flex-direction:row;padding:12px 16px;gap:12px}
+  .about-badge .badge-img{width:44px;height:44px}
+  .about-badge .badge-text span:first-child{font-size:12px}
+
+  /* Services */
+  .service-card{aspect-ratio:4/3}
+  .service-card .overlay{padding:20px}
+  .service-card .s-title{font-size:20px}
+  .service-card .s-pax{font-size:9px}
+  .service-card .s-desc{font-size:13px}
+  .service-card[style]{max-width:100%!important}
+
+  /* Modular */
+  .module-item{padding:20px}
+  .module-item .m-icon{font-size:24px;margin-bottom:8px}
+  .module-item .m-name{font-size:16px}
+  .module-item .m-text{font-size:12px}
+
+  /* Chefs */
   .chef-photo{width:160px;height:160px}
+  .chef-card h3{font-size:22px}
+  .chef-card p{font-size:13px}
+
+  /* Gallery */
+  .gallery{padding:60px 0}
+  .gallery-scroll img{width:140px;height:140px;border-radius:4px}
+
+  /* Menu */
+  .menu-col h3{font-size:20px}
+  .menu-col li{font-size:16px;padding:6px 0}
+
+  /* Drinks */
+  .drinks-pills{gap:8px}
+  .drinks-pill{padding:8px 16px;font-size:11px;letter-spacing:1px}
+
+  /* Venues */
+  .venue-card{aspect-ratio:3/2}
+  .venue-card .v-text{font-size:15px}
+
+  /* CTA */
+  .cta{padding:100px 0}
+  .cta-title{font-size:30px}
+  .cta-sub{font-size:18px;margin-bottom:32px}
+  .cta-btn{padding:14px 40px;font-size:11px;letter-spacing:3px}
+  .cta-contact{font-size:13px}
+
+  /* Footer */
+  .footer{padding:24px 0}
+  .footer-logo{height:28px}
+  .footer p{font-size:10px}
+
+  /* Nav */
+  .nav-logo img{height:28px}
+  .nav-logo span{font-size:11px;letter-spacing:2px}
+  .nav-links.open a{font-size:13px;letter-spacing:2px;padding:8px 0}
 }
 </style>
 </head>
@@ -452,13 +537,13 @@ a{text-decoration:none;color:inherit}
   <div class="nav-inner">
     <a href="#" class="nav-logo"><img src="img/ei_logo_white.png" alt="Emporio Italia"><span>Catering</span></a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#services">Serviços</a></li>
       <li><a href="#chefs">Chefs</a></li>
       <li><a href="#menu">Menu</a></li>
-      <li><a href="#venues">Venues</a></li>
+      <li><a href="#venues">Espaços</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">Request Proposal</a>
+    <a href="#contact" class="nav-cta">Pedir Proposta</a>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
   </div>
 </nav>
@@ -469,8 +554,8 @@ a{text-decoration:none;color:inherit}
   <div class="hero-content">
     <img src="img/ei_logo_white.png" alt="Emporio Italia" class="hero-logo">
     <h1 class="hero-title">Catering</h1>
-    <p class="hero-tagline font-elegant">We bring the Dolce Vita to your event</p>
-    <a href="#services" class="hero-cta">Discover Our Services</a>
+    <p class="hero-tagline font-elegant">A Dolce Vita no seu evento</p>
+    <a href="#services" class="hero-cta">Descubra os Nossos Serviços</a>
   </div>
   <div class="hero-scroll">
     <span></span>
@@ -485,23 +570,23 @@ a{text-decoration:none;color:inherit}
         <img src="img/about.jpg" alt="Emporio Italia Catering" loading="lazy">
       </div>
       <div class="about-text reveal reveal-delay-1">
-        <span class="section-label">About Us</span>
-        <h2 class="font-display">The Direct Gate to the<br>Best Italian Products</h2>
-        <span class="highlight font-elegant">Authentic Italian soul, on the Portuguese table.</span>
-        <p>We are Emporio Italia Catering, a premium catering service bringing the authentic soul of Italy to the Portuguese table. We specialize in curated Italian dining experiences, pairing handcrafted live pasta and artisanal regional dishes with exclusive Italian wines.</p>
-        <p>By sourcing directly from producers in Italy since 2020, we provide seamless, turnkey catering solutions for corporate events, private dinners, weddings and special events.</p>
+        <span class="section-label">Quem Somos</span>
+        <h2 class="font-display">A Porta Directa para os<br>Melhores Produtos Italianos</h2>
+        <span class="highlight font-elegant">L'anima italiana, alla tavola portoghese.</span>
+        <p>Somos a Emporio Italia Catering — o braço gastronómico do maior importador italiano em Portugal. Trazemos a alma autêntica de Itália à mesa portuguesa, com experiências que combinam pasta artesanal ao vivo, pratos regionais de norte a sul e vinhos seleccionados de 300+ rótulos exclusivos.</p>
+        <p>Importamos directamente dos produtores em Itália desde 2020. Oferecemos soluções turnkey de catering para eventos corporativos, jantares privados, casamentos e ocasiões onde só o extraordinário basta.</p>
         <div class="about-stat-row">
           <div class="about-stat">
             <span class="num font-display">800+</span>
-            <span class="label">Products</span>
+            <span class="label">Produtos</span>
           </div>
           <div class="about-stat">
             <span class="num font-display">300+</span>
-            <span class="label">Wine Labels</span>
+            <span class="label">Rótulos</span>
           </div>
           <div class="about-stat">
             <span class="num font-display">250</span>
-            <span class="label">Max Guests</span>
+            <span class="label">Convidados</span>
           </div>
         </div>
         <div class="about-badge">
@@ -520,20 +605,20 @@ a{text-decoration:none;color:inherit}
 <section class="services" id="services">
   <div class="container">
     <div class="text-center reveal">
-      <span class="section-label">Our Services</span>
-      <h2 class="section-title font-display">Turnkey Italian Experiences</h2>
-      <p class="section-subtitle font-elegant">From intimate chef's tables to grand celebrations, each service is a complete Italian journey.</p>
+      <span class="section-label">Os Nossos Serviços</span>
+      <h2 class="section-title font-display">Experiências Italianas Turnkey</h2>
+      <p class="section-subtitle font-elegant">De mesas intimistas com chef a grandes celebrações — cada serviço é uma viagem sensorial por Itália.</p>
     </div>
     <div class="services-grid">
 
       <div class="service-card reveal">
         <img src="img/aperitivo.jpg" alt="Aperitivo Italiano" loading="lazy">
         <div class="overlay">
-          <span class="s-pax">30 to 200 pax</span>
+          <span class="s-pax">30 a 200 pax</span>
           <h3 class="s-title font-display">Aperitivo Italiano</h3>
-          <p class="s-desc">Premium salumi & formaggi boards, vibrant antipasti, Prosecco DOCG, and a curated Spritz Bar.</p>
+          <p class="s-desc">Tábuas generosas de salumi & formaggi, antipasti coloridos, Prosecco DOCG gelado e Spritz Bar com receitas de autor.</p>
           <div class="s-tags">
-            <span class="s-tag">Cocktail</span><span class="s-tag">Buffet</span><span class="s-tag">Corporate</span><span class="s-tag">Wedding</span>
+            <span class="s-tag">Cocktail</span><span class="s-tag">Buffet</span><span class="s-tag">Corporativo</span><span class="s-tag">Casamento</span>
           </div>
         </div>
       </div>
@@ -541,11 +626,11 @@ a{text-decoration:none;color:inherit}
       <div class="service-card reveal reveal-delay-1">
         <img src="img/livecooking.jpg" alt="Live Cooking" loading="lazy">
         <div class="overlay">
-          <span class="s-pax">30 to 200 pax</span>
+          <span class="s-pax">30 a 200 pax</span>
           <h3 class="s-title font-display">Live Cooking</h3>
-          <p class="s-desc">Interactive Pentolo pasta & risotto station, live-fired pizza and pinsa, bespoke burrata bar.</p>
+          <p class="s-desc">Estação interactiva Pentolo com pasta & risotto ao minuto, pizza e pinsa ao vivo, burrata bar à medida do evento.</p>
           <div class="s-tags">
-            <span class="s-tag">Theatre</span><span class="s-tag">Events</span><span class="s-tag">Wedding</span>
+            <span class="s-tag">Teatro</span><span class="s-tag">Eventos</span><span class="s-tag">Casamento</span>
           </div>
         </div>
       </div>
@@ -553,11 +638,11 @@ a{text-decoration:none;color:inherit}
       <div class="service-card reveal reveal-delay-2">
         <img src="img/privatechef.jpg" alt="Private Chef Dinners" loading="lazy">
         <div class="overlay">
-          <span class="s-pax">8 to 25 pax</span>
-          <h3 class="s-title font-display">Private Chef Dinners</h3>
-          <p class="s-desc">Bespoke multi-course menus with white truffle, rare vintages, and exclusive seasonal ingredients.</p>
+          <span class="s-pax">8 a 25 pax</span>
+          <h3 class="s-title font-display">Jantares com Chef Privado</h3>
+          <p class="s-desc">Menus degustação sob medida com tartufo bianco, vintages raros e ingredientes de época que só a importação directa permite.</p>
           <div class="s-tags">
-            <span class="s-tag">Exclusive</span><span class="s-tag">Business</span><span class="s-tag">Intimate</span>
+            <span class="s-tag">Exclusivo</span><span class="s-tag">Business</span><span class="s-tag">Intimista</span>
           </div>
         </div>
       </div>
@@ -565,11 +650,11 @@ a{text-decoration:none;color:inherit}
       <div class="service-card reveal">
         <img src="img/winetasting.jpg" alt="Wine Tasting" loading="lazy">
         <div class="overlay">
-          <span class="s-pax">8 to 30 pax</span>
+          <span class="s-pax">8 a 30 pax</span>
           <h3 class="s-title font-display">Wine Tasting</h3>
-          <p class="s-desc">Guided by our sommeliers through 300+ labels, by grape variety or region, paired with authentic antipasti.</p>
+          <p class="s-desc">Guiada pelos nossos sommeliers por 300+ rótulos — por casta, região ou tema — harmonizada com antipasti autênticos.</p>
           <div class="s-tags">
-            <span class="s-tag">Corporate</span><span class="s-tag">Incentive</span><span class="s-tag">Discovery</span>
+            <span class="s-tag">Corporativo</span><span class="s-tag">Incentivo</span><span class="s-tag">Descoberta</span>
           </div>
         </div>
       </div>
@@ -577,11 +662,11 @@ a{text-decoration:none;color:inherit}
       <div class="service-card reveal reveal-delay-1">
         <img src="img/italobento.jpg" alt="ItaloBento" loading="lazy">
         <div class="overlay">
-          <span class="s-pax">15 to 100 pax</span>
+          <span class="s-pax">15 a 100 pax</span>
           <h3 class="s-title font-display">ItaloBento</h3>
-          <p class="s-desc">Premium all-in-one gourmet box: focaccia sandwich, artisanal antipasti, drink, and Italian dessert.</p>
+          <p class="s-desc">Box gourmet all-in-one: sandes de focaccia artesanal, antipasti seleccionados, bebida italiana e dolce de autor.</p>
           <div class="s-tags">
-            <span class="s-tag">Portable</span><span class="s-tag">Corporate</span><span class="s-tag">Eco-friendly</span>
+            <span class="s-tag">Portátil</span><span class="s-tag">Corporativo</span><span class="s-tag">Eco-friendly</span>
           </div>
         </div>
       </div>
@@ -589,11 +674,11 @@ a{text-decoration:none;color:inherit}
       <div class="service-card reveal reveal-delay-2">
         <img src="img/italodisco.jpg" alt="Aperitivo Italo Disco" loading="lazy">
         <div class="overlay">
-          <span class="s-pax">30 to 250 pax</span>
+          <span class="s-pax">30 a 250 pax</span>
           <h3 class="s-title font-display">Aperitivo Italo Disco</h3>
-          <p class="s-desc">Spritz, Bellini, Negroni and antipasti paired with 80s Italo-disco classics and rare vinyl gems.</p>
+          <p class="s-desc">Spritz, Bellini, Negroni e antipasti ao som dos grandes clássicos Italo-disco dos anos 80 e vinis de colecção.</p>
           <div class="s-tags">
-            <span class="s-tag">DJ</span><span class="s-tag">Party</span><span class="s-tag">Activation</span>
+            <span class="s-tag">DJ</span><span class="s-tag">Festa</span><span class="s-tag">Activação</span>
           </div>
         </div>
       </div>
@@ -601,11 +686,11 @@ a{text-decoration:none;color:inherit}
       <div class="service-card reveal" style="grid-column:1/-1;max-width:calc(50% - 12px);margin:0 auto">
         <img src="img/sunset.jpg" alt="Sunset Cruise" loading="lazy">
         <div class="overlay">
-          <span class="s-pax">10 to 20 pax</span>
+          <span class="s-pax">10 a 20 pax</span>
           <h3 class="s-title font-display">Sunset Cruise</h3>
-          <p class="s-desc">Ready-to-sail Italian catering for Tejo cruises. Nautical grazing boxes and Aperol Spritz kits delivered to your gangway.</p>
+          <p class="s-desc">Catering italiano pronto a embarcar para cruzeiros no Tejo. Grazing boxes náuticas e kits Aperol Spritz entregues directamente no cais.</p>
           <div class="s-tags">
-            <span class="s-tag">Tejo</span><span class="s-tag">Bachelorette</span><span class="s-tag">Incentive</span>
+            <span class="s-tag">Tejo</span><span class="s-tag">Despedida</span><span class="s-tag">Incentivo</span>
           </div>
         </div>
       </div>
@@ -617,29 +702,29 @@ a{text-decoration:none;color:inherit}
 <!-- ══════ MODULAR FORMULA ══════ -->
 <section class="modular">
   <div class="modular-content container reveal">
-    <span class="section-label">Your Event, Your Way</span>
-    <h2 class="section-title font-display">Modular Formula</h2>
-    <p class="section-subtitle font-elegant">Pick, mix, or combine our premium modules for a full-scale gastronomic journey.</p>
+    <span class="section-label">O Seu Evento, À Sua Medida</span>
+    <h2 class="section-title font-display">Fórmula Modular</h2>
+    <p class="section-subtitle font-elegant">Escolha, combine e personalize os nossos módulos premium para uma experiência gastronómica à sua medida.</p>
     <div class="modules-grid">
       <div class="module-item">
         <span class="m-icon">&#127858;</span>
-        <h4 class="m-name font-display">The Aperitivo Base</h4>
-        <p class="m-text">Essential Italian finger foods, artisanal cheeses, and cured meats to kick off the festivities.</p>
+        <h4 class="m-name font-display">A Base Aperitivo</h4>
+        <p class="m-text">Finger food italiano essencial, formaggi artesanais e salumi curados para abrir as festividades.</p>
       </div>
       <div class="module-item">
         <span class="m-icon">&#127859;</span>
-        <h4 class="m-name font-display">The Live Station</h4>
-        <p class="m-text">A private chef preparing fresh pasta, risotto or pizza right before your eyes.</p>
+        <h4 class="m-name font-display">A Estação ao Vivo</h4>
+        <p class="m-text">Um chef privado a preparar pasta fresca, risotto ou pizza diante dos seus olhos.</p>
       </div>
       <div class="module-item">
         <span class="m-icon">&#127863;</span>
-        <h4 class="m-name font-display">The Beverage Pairing</h4>
-        <p class="m-text">Hand-picked Italian wines, prosecco, or a dedicated Spritz bar to complement your event.</p>
+        <h4 class="m-name font-display">O Pairing de Bebidas</h4>
+        <p class="m-text">Vinhos italianos seleccionados, prosecco ou um Spritz bar dedicado para complementar o seu evento.</p>
       </div>
       <div class="module-item">
         <span class="m-icon">&#10024;</span>
-        <h4 class="m-name font-display">Authenticity Guaranteed</h4>
-        <p class="m-text">Every module features 100% authentic ingredients sourced directly from Italy.</p>
+        <h4 class="m-name font-display">Autenticidade Garantida</h4>
+        <p class="m-text">Cada módulo utiliza ingredientes 100% autênticos, importados directamente de Itália.</p>
       </div>
     </div>
   </div>
@@ -648,8 +733,8 @@ a{text-decoration:none;color:inherit}
 <!-- ══════ CHEFS ══════ -->
 <section class="chefs" id="chefs">
   <div class="container text-center">
-    <span class="section-label reveal">Our Chefs</span>
-    <h2 class="section-title font-display reveal">Masters of Italian Cuisine</h2>
+    <span class="section-label reveal">Os Nossos Chefs</span>
+    <h2 class="section-title font-display reveal">Mestres da Cucina Italiana</h2>
     <div class="divider reveal"></div>
     <div class="chefs-grid">
       <div class="chef-card reveal">
@@ -658,7 +743,7 @@ a{text-decoration:none;color:inherit}
         </div>
         <h3 class="font-display">Armando Capocci</h3>
         <span class="chef-role">Executive Chef</span>
-        <p>Vice-President of the Italian Chefs Association in Portugal. Executive Chef of Lisbon's La Fiorentina, with a distinguished international career across France, Spain, and Italy. Trained alongside culinary icons Antonello Colonna and Niko Romito.</p>
+        <p>Vice-Presidente da Associação de Chefs Italianos em Portugal. Executive Chef do La Fiorentina em Lisboa, com uma carreira internacional distinguida entre França, Espanha e Itália. Formou-se junto dos ícones culinários Antonello Colonna e Niko Romito.</p>
       </div>
       <div class="chef-card reveal reveal-delay-1">
         <div class="chef-photo">
@@ -666,7 +751,7 @@ a{text-decoration:none;color:inherit}
         </div>
         <h3 class="font-display">Alessandro Olivotto</h3>
         <span class="chef-role">Executive Chef</span>
-        <p>Originally from the Italian Dolomites, Alessandro bridges his background in Urban Planning with a profound passion for gastronomy. Since making Lisbon his home in 2013, he has led several of the city's most renowned Italian kitchens.</p>
+        <p>Originário das Dolomitas italianas, Alessandro combina a sua formação em Urbanismo com uma profunda paixão pela gastronomia. Desde que fez de Lisboa a sua casa em 2013, liderou várias das mais conceituadas cozinhas italianas da cidade.</p>
       </div>
     </div>
   </div>
@@ -675,8 +760,8 @@ a{text-decoration:none;color:inherit}
 <!-- ══════ GALLERY ══════ -->
 <section class="gallery">
   <div class="text-center reveal">
-    <span class="section-label">A Feast for the Eyes</span>
-    <h2 class="section-title font-display">Our Creations</h2>
+    <span class="section-label">Um Festim para os Olhos</span>
+    <h2 class="section-title font-display">As Nossas Criações</h2>
   </div>
   <div class="gallery-scroll">
     <img src="img/antipasti_01.jpg" alt="Antipasti" loading="lazy">
@@ -721,14 +806,14 @@ a{text-decoration:none;color:inherit}
 <section class="menu" id="menu">
   <div class="container">
     <div class="text-center reveal">
-      <span class="section-label">Menu Preview</span>
-      <h2 class="section-title font-display">Crafted with Passion</h2>
-      <p class="section-subtitle font-elegant">Our chefs design bespoke, seasonal menus complemented by expert wine pairings.</p>
+      <span class="section-label">Antevisão do Menu</span>
+      <h2 class="section-title font-display">Criado com Paixão</h2>
+      <p class="section-subtitle font-elegant">Menus sazonais criados sob medida pelo chef, complementados por harmonizações de vinho criteriosamente seleccionadas.</p>
     </div>
     <div class="menu-grid">
       <div class="menu-col reveal">
         <h3 class="font-display">Antipasti</h3>
-        <span class="menu-sub">A generous Italian opening</span>
+        <span class="menu-sub">Uma generosa abertura italiana</span>
         <ul>
           <li>Prosciutto di Parma & Prosciutto Crudo</li>
           <li>Mortadella, Bresaola & Coppa</li>
@@ -740,7 +825,7 @@ a{text-decoration:none;color:inherit}
       </div>
       <div class="menu-col reveal reveal-delay-1">
         <h3 class="font-display">Piatti Principali</h3>
-        <span class="menu-sub">From our chef's table</span>
+        <span class="menu-sub">Da mesa do nosso chef</span>
         <ul>
           <li>Spaghettoni Cacio e Pepe di Mare</li>
           <li>Raviolo Amatriciano con Tartufo Nero</li>
@@ -757,14 +842,14 @@ a{text-decoration:none;color:inherit}
 <!-- ══════ DRINKS ══════ -->
 <section class="drinks">
   <div class="drinks-content container reveal">
-    <span class="section-label">Curated Selection</span>
-    <h2 class="section-title font-display">300+ Italian Labels</h2>
-    <p class="section-subtitle font-elegant">From Super Tuscans to Franciacorta, every sip tells an Italian story.</p>
+    <span class="section-label">Selecção Curada</span>
+    <h2 class="section-title font-display">300+ Rótulos Italianos</h2>
+    <p class="section-subtitle font-elegant">Dos Super Toscanos ao Franciacorta — cada gole conta uma história de Itália.</p>
     <div class="drinks-pills">
-      <span class="drinks-pill">Wines</span>
+      <span class="drinks-pill">Vinhos</span>
       <span class="drinks-pill">Prosecco</span>
       <span class="drinks-pill">Franciacorta</span>
-      <span class="drinks-pill">Beers</span>
+      <span class="drinks-pill">Cervejas</span>
       <span class="drinks-pill">Spirits</span>
       <span class="drinks-pill">Cocktails</span>
     </div>
@@ -775,57 +860,44 @@ a{text-decoration:none;color:inherit}
 <section class="venues" id="venues">
   <div class="container">
     <div class="text-center reveal">
-      <span class="section-label">Exclusive Venues</span>
-      <h2 class="section-title font-display">Extraordinary Settings</h2>
-      <p class="section-subtitle font-elegant">From historic Lisbon palaces to avant-garde spaces in Cascais.</p>
+      <span class="section-label">Espaços Exclusivos</span>
+      <h2 class="section-title font-display">Cenários Extraordinários</h2>
+      <p class="section-subtitle font-elegant">De palácios históricos de Lisboa a espaços vanguardistas em Cascais.</p>
     </div>
     <div class="venues-grid">
       <div class="venue-card reveal">
         <img src="img/venue1.jpg" alt="Exclusive Venue" loading="lazy">
         <div class="v-overlay">
-          <span class="v-text font-elegant">Frescoed ceilings and lush private gardens in the heart of Lisbon</span>
+          <span class="v-text font-elegant">Tectos com frescos e jardins privados exuberantes no coração de Lisboa</span>
         </div>
       </div>
       <div class="venue-card reveal reveal-delay-1">
         <img src="img/venue2.jpg" alt="Exclusive Venue" loading="lazy">
         <div class="v-overlay">
-          <span class="v-text font-elegant">Iconic automotive art meets grand celebration in Cascais</span>
+          <span class="v-text font-elegant">Arte automóvel icónica encontra grandes celebrações em Cascais</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════ TRUST ══════ -->
-<section class="trust">
-  <div class="container text-center">
-    <span class="section-label reveal">They Trust Us</span>
-    <div class="trust-logos reveal">
-      <img src="img/trust_02.jpeg" alt="Client" loading="lazy">
-      <img src="img/trust_03.png" alt="Client" loading="lazy">
-      <img src="img/trust_04.png" alt="Client" loading="lazy">
-      <img src="img/trust_05.png" alt="Client" loading="lazy">
-      <img src="img/trust_06.png" alt="Client" loading="lazy">
-      <img src="img/trust_07.jpeg" alt="Client" loading="lazy">
-    </div>
-  </div>
-</section>
+<!-- Trust section removed - logos not available -->
 
 <!-- ══════ CTA ══════ -->
 <section class="cta" id="contact">
   <div class="cta-content container reveal">
-    <span class="section-label">Let's Create Together</span>
-    <h2 class="cta-title font-display">Request a Proposal</h2>
-    <p class="cta-sub font-elegant">We look forward to creating your next Italian Experience. A presto!</p>
-    <a href="mailto:regis@emporioitalia.pt?subject=Catering%20Inquiry" class="cta-btn">Get in Touch</a>
-    <p class="cta-contact">or email us directly at <a href="mailto:regis@emporioitalia.pt">regis@emporioitalia.pt</a></p>
+    <span class="section-label">Vamos Criar Juntos</span>
+    <h2 class="cta-title font-display">Peça a Sua Proposta</h2>
+    <p class="cta-sub font-elegant">Será um prazer desenhar a sua próxima Esperienza Italiana. A presto!</p>
+    <a href="mailto:regis@emporioitalia.pt?subject=Pedido%20de%20Proposta%20Catering" class="cta-btn">Contacte-nos</a>
+    <p class="cta-contact">ou envie-nos um email para <a href="mailto:regis@emporioitalia.pt">regis@emporioitalia.pt</a></p>
   </div>
 </section>
 
 <!-- ══════ FOOTER ══════ -->
 <footer class="footer">
   <img src="img/ei_logo_white.png" alt="Emporio Italia" class="footer-logo">
-  <p>&copy; 2025 Emporio Italia Catering <span class="flag"><span class="g"></span><span class="w"></span><span class="r"></span></span> Lisbon, Portugal</p>
+  <p>&copy; 2025 Emporio Italia Catering <span class="flag"><span class="g"></span><span class="w"></span><span class="r"></span></span> Lisboa, Portugal</p>
 </footer>
 
 <!-- ══════ SCRIPTS ══════ -->
