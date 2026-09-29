@@ -1,2 +1,5 @@
 catering_site.zip
 .claude/
+
+# Sommelier skill: private trade prices and stock (never commit; the repo is public)
+skills/sommelier-emporio-italia/data/precos_stock*.csv
