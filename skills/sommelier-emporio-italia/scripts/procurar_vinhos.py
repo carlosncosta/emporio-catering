@@ -125,8 +125,11 @@ def relevancia(v, termo):
     pontos = 0
     for campo, peso in (("harmonizacoes_pt", 3), ("harmonizacoes", 2), ("harmonizacoes_menu_emporio", 1)):
         for h in v.get(campo) or []:
-            if t in norm(h):
+            nh = norm(h)
+            if t in nh:
                 pontos += peso
+                if nh.startswith(t) or nh == t:
+                    pontos += peso   # o prato pedido, não um prato vizinho (ex.: 'salada de polvo')
     return pontos
 
 

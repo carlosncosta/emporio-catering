@@ -74,7 +74,7 @@ O catálogo não tem espumantes nem frisantes da Frescobaldi. Dentro de cada tip
 - **Serviço:** 8–10 °C, copo de branco médio, sem decantação · **Guarda:** 2–3 anos (estimativa)
 - **Harmonizações:**
   - *Clássicas:* peixe grelhado, marisco, risotto de legumes, massas com peixe, queijos frescos.
-  - *Cozinha portuguesa:* bacalhau à Brás, amêijoas à Bulhão Pato, robalo ou dourada grelhados, arroz de marisco, queijo de Azeitão.
+  - *Cozinha portuguesa:* polvo à lagareiro (harmonizacao.md §7), bacalhau à Brás, amêijoas à Bulhão Pato, robalo ou dourada grelhados, arroz de marisco, queijo de Azeitão.
   - *Menu Emporio:* Spaghettoni Cacio e Pepe di Mare; Risotto Verde con Cozze e Tartare di Tonno; Parmigiano Reggiano & Burrata di Andria; Paccheri al Pistacchio e Stracciatella; Focaccia, Grissini & Taralli.
 - **Argumento de venda:** branco de montanha de uma DOC histórica, citada já em 1716. É fresco e elegante, serve do peixe à massa e vende-se bem a copo.
 - **Prémios e pontuações:** nenhum verificado.
